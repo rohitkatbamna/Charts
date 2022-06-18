@@ -23,7 +23,7 @@
 		<div class="oneInputgroup">
 			<div class="eachgroup">
 				<label for="cars">Institution</label>
-				<select id="cars" name="--select--">
+				<select id="cars" name="--select--" class="form-control">
 					<option value="volvo">Volvo</option>
 					<option value="saab">Saab</option>
 					<option value="fiat">Fiat</option>
@@ -32,7 +32,7 @@
 			</div>
 			<div class="eachgroup">
 				<label for="cars">Venue</label>
-				<select id="cars" name="--select--">
+				<select id="cars" name="--select--" class="form-control">
 					<option value="volvo">Volvo</option>
 					<option value="saab">Saab</option>
 					<option value="fiat">Fiat</option>
@@ -41,21 +41,11 @@
 			</div>
 			<div class="eachgroup">
 				<label for="cars">From Date</label>
-				<select id="cars" name="--select--">
-					<option value="volvo">Volvo</option>
-					<option value="saab">Saab</option>
-					<option value="fiat">Fiat</option>
-					<option value="audi">Audi</option>
-				</select>
+				<input type="date" class="form-control" />
 			</div>
 			<div class="eachgroup">
 				<label for="cars">To Date</label>
-				<select id="cars" name="--select--">
-					<option value="volvo">Volvo</option>
-					<option value="saab">Saab</option>
-					<option value="fiat">Fiat</option>
-					<option value="audi">Audi</option>
-				</select>
+				<input type="date" class="form-control" />
 			</div>
 			<div></div>
 			<div style="margin-left: auto">
@@ -75,7 +65,7 @@
 				id="university_wide_view"
 				onclick="universityWideView()"
 			>
-				University wide view
+				University Wide View
 			</button>
 			<button
 				type="button"
@@ -83,7 +73,7 @@
 				id="particular_day_view"
 				onclick="particularDayView()"
 			>
-				Particular day View
+				Particular Day View
 			</button>
 			<button
 				type="button"
@@ -91,7 +81,7 @@
 				id="particular_venue_view"
 				onclick="particularVenueView()"
 			>
-				Particular venue view
+				Particular Venue View
 			</button>
 		</div>
 		<div class="mt-5">
@@ -110,11 +100,6 @@
 			<div id="timeline_day_view"></div>
 			<div id="timeline_venue_view"></div>
 		</div>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-			crossorigin="anonymous"
-		></script>
 		<script src="./script.js"></script>
 	</body>
 </html>

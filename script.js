@@ -109,7 +109,15 @@ function particularDayView() {
 					group: obj.venue.id,
 					start: newobj.from_time,
 					end: newobj.to_time,
-					title: "<h6>" + newobj.from_time + " - " + newobj.to_time + "</h6>",
+					title:
+						"<h6" +
+						" class=" +
+						"this_tooltip" +
+						">" +
+						newobj.from_time +
+						" - " +
+						newobj.to_time +
+						"</h6>",
 					style: "background-color:#EB5C61; border:none;height:100%",
 				};
 				console.log(availableData);
@@ -140,7 +148,7 @@ function particularDayView() {
 					" %" +
 					"</h4>",
 				title: obj.venue_name,
-				style: "color:#171D35",
+				style: "color:#171D35; font-size:10px;",
 			};
 			DataSetGroup.push(newData);
 		}
@@ -203,7 +211,12 @@ function particularVenueView() {
 					end: newobj.to_time,
 					style:
 						"background-color:rgba(235, 92, 97, 0.1); border:none;height:100%",
-					title: "<h6>" + newobj.from_time + "-" + newobj.to_time + "</h6>",
+					title:
+						"<h6 class='this_tooltip'>" +
+						newobj.from_time +
+						"-" +
+						newobj.to_time +
+						"</h6>",
 				};
 				DataSetItem.push(availableData);
 			}
@@ -247,7 +260,7 @@ function particularVenueView() {
 					" %" +
 					"</h4>",
 				title: obj.venue_name,
-				style: "color:#171D35",
+				style: "color:#171D35; ",
 			};
 			DataSetGroup.push(newData);
 		}

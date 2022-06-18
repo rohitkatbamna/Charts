@@ -22,10 +22,13 @@ thead tr {
 .eachgroup {
 	padding: 5%;
 }
-label {
+.oneInputgroup .eachgroup label {
 	width: 20%;
 }
-select {
+.oneInputgroup .eachgroup select {
+	width: 50%;
+}
+.oneInputgroup .eachgroup input {
 	width: 50%;
 }
 .button_group_all {
@@ -80,7 +83,9 @@ select {
 	position: relative;
 	border-bottom: 1px dotted black;
 }
-
+.this_tooltip {
+	background-color: rgba(23, 29, 53, 0.8);
+}
 .tooltipone .tooltiptextone {
 	visibility: hidden;
 	width: 120px;
@@ -92,6 +97,7 @@ select {
 	margin-bottom: 50px;
 	/* Position the tooltip */
 	position: absolute;
+
 	z-index: 1;
 }
 
